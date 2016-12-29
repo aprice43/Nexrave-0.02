@@ -36,7 +36,7 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
 
         self.determineSignInOrRegister()
-        
+        self.hideKeyboardWhenTappedAround()
         if buttonTitlePressed != nil {
             
             if buttonTitlePressed == "signIn"{
@@ -146,4 +146,14 @@ class SignUpViewController: UIViewController {
     }
     */
 
+}
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }

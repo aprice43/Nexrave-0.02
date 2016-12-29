@@ -83,17 +83,17 @@
 			isa = PBXGroup;
 			children = (
 				7D0012651E141DB200D9C7E1 /* AppDelegate.swift */,
-				7D0012691E141DB200D9C7E1 /* Main.storyboard */,
 				7D00127B1E141EE000D9C7E1 /* SignUpViewController.swift */,
 				7D0012771E141DF400D9C7E1 /* ViewController.swift */,
-				7D00126C1E141DB200D9C7E1 /* Assets.xcassets */,
+				7D0012871E143CE300D9C7E1 /* FeedController.swift */,
+				7D0012691E141DB200D9C7E1 /* Main.storyboard */,
 				7D00127D1E141EEC00D9C7E1 /* nexraveSplash.png */,
 				7D00126E1E141DB200D9C7E1 /* LaunchScreen.storyboard */,
 				7D0012711E141DB200D9C7E1 /* Info.plist */,
 				7D00127F1E141EFE00D9C7E1 /* nexraveScreen.png */,
 				7D0012801E141EFE00D9C7E1 /* partyFootage.mp4 */,
 				7D0012851E142DBE00D9C7E1 /* GoogleService-Info.plist */,
-				7D0012871E143CE300D9C7E1 /* FeedController.swift */,
+				7D00126C1E141DB200D9C7E1 /* Assets.xcassets */,
 			);
 			path = "Nexrave 0.02";
 			sourceTree = "<group>";
