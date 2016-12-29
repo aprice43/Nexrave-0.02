@@ -19,6 +19,7 @@
 		7D0012831E141EFE00D9C7E1 /* partyFootage.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7D0012801E141EFE00D9C7E1 /* partyFootage.mp4 */; };
 		7D0012861E142DBE00D9C7E1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D0012851E142DBE00D9C7E1 /* GoogleService-Info.plist */; };
 		7D0012881E143CE300D9C7E1 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0012871E143CE300D9C7E1 /* FeedController.swift */; };
+		7D0C6BF61E15B8AA0038E41E /* eventpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0C6BF51E15B8AA0038E41E /* eventpageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		7D0012801E141EFE00D9C7E1 /* partyFootage.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = partyFootage.mp4; sourceTree = "<group>"; };
 		7D0012851E142DBE00D9C7E1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7D0012871E143CE300D9C7E1 /* FeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		7D0C6BF51E15B8AA0038E41E /* eventpageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventpageViewController.swift; sourceTree = "<group>"; };
 		B552B926606910CD3A4B2D9E /* Pods-Nexrave 0.02.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nexrave 0.02.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nexrave 0.02/Pods-Nexrave 0.02.release.xcconfig"; sourceTree = "<group>"; };
 		CDCC1DF29A17A96B1F222A6D /* Pods-Nexrave 0.02.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nexrave 0.02.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nexrave 0.02/Pods-Nexrave 0.02.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +88,7 @@
 				7D00127B1E141EE000D9C7E1 /* SignUpViewController.swift */,
 				7D0012771E141DF400D9C7E1 /* ViewController.swift */,
 				7D0012871E143CE300D9C7E1 /* FeedController.swift */,
+				7D0C6BF51E15B8AA0038E41E /* eventpageViewController.swift */,
 				7D0012691E141DB200D9C7E1 /* Main.storyboard */,
 				7D00127D1E141EEC00D9C7E1 /* nexraveSplash.png */,
 				7D00126E1E141DB200D9C7E1 /* LaunchScreen.storyboard */,
@@ -234,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D0C6BF61E15B8AA0038E41E /* eventpageViewController.swift in Sources */,
 				7D0012781E141DF400D9C7E1 /* ViewController.swift in Sources */,
 				7D00127C1E141EE000D9C7E1 /* SignUpViewController.swift in Sources */,
 				7D0012881E143CE300D9C7E1 /* FeedController.swift in Sources */,
