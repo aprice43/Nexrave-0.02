@@ -14,7 +14,7 @@ import FBSDKCoreKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var storyboad: UIStoryboard?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
@@ -23,6 +23,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         application.statusBarStyle = .lightContent
         // Override point for customization after application launch.
+        
+        self.storyboad =  UIStoryboard(name: "Main", bundle: Bundle.main)
+        let currentUser = FIRAuth.auth()?.currentUser!
+        if currentUser != nil
+        {
+            
+            self.window?.rootViewController = self.storyboad?.instantiateViewController(withIdentifier: "SWRevealViewController")
+        }
+        else
+        {
+            self.window?.rootViewController = self.storyboad?.instantiateViewController(withIdentifier: "Login")
+        }
+        
         return true
         
     }

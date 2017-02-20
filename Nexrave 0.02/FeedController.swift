@@ -35,7 +35,7 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
     menueButton.target = self.revealViewController()
     menueButton.action = #selector(SWRevealViewController.revealToggle(_:))
         
-        
+    self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     
     collectionView?.register(CustomCell.self, forCellWithReuseIdentifier: customIdentifier)
         

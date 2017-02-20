@@ -13,7 +13,7 @@
         <!--Login Page View Controller-->
         <scene sceneID="qCO-m4-lMF">
             <objects>
-                <viewController id="vL3-8X-9oe" customClass="LoginPageViewController" customModule="Nexrave_0_02" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vL3-8X-9oe" customClass="LoginPageViewController" customModule="Nexrave_0_02" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PDv-xF-6ny"/>
                         <viewControllerLayoutGuide type="bottom" id="cCj-p7-1Sq"/>
