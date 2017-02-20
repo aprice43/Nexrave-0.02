@@ -13,6 +13,14 @@ import Foundation
 class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLayout{
     
     let customIdentifier = "custom ID"
+    
+    
+    @IBOutlet weak var menueButton: UIBarButtonItem!
+    
+    
+    
+    
+    
     override func viewDidLoad(){
     super.viewDidLoad()
     let titleLogo : UIImage = UIImage(named: "FeedLogo")!
@@ -22,7 +30,17 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
     imageView.image = titleLogo
     self.navigationController?.navigationBar.addSubview(imageView)
     self.collectionView?.backgroundColor = UIColor.black
+    self.navigationController?.navigationBar.backgroundColor = UIColor.clear
+    self.navigationController?.navigationBar.barTintColor = UIColor.clear
+    menueButton.target = self.revealViewController()
+    menueButton.action = #selector(SWRevealViewController.revealToggle(_:))
+        
+        
+    
     collectionView?.register(CustomCell.self, forCellWithReuseIdentifier: customIdentifier)
+        
+        
+    
         
     }
     

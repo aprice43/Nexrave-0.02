@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>960055745522-1ej5t42aelmeuokncvhkcarolq2u37qr.apps.googleusercontent.com</string>
+	<string>592489729650-av7m2pbl4293983jnsalt0bttm4bm1ru.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.960055745522-1ej5t42aelmeuokncvhkcarolq2u37qr</string>
+	<string>com.googleusercontent.apps.592489729650-av7m2pbl4293983jnsalt0bttm4bm1ru</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDdx48QTgydp3U1aIVxIkv-pp3hhcM2RAI</string>
+	<string>AIzaSyB_3LWQxDz4bGLhVkPQ9J_Pz2TuikK7VZk</string>
 	<key>GCM_SENDER_ID</key>
-	<string>960055745522</string>
+	<string>592489729650</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>Alvan-Price.Nexrave-0-02</string>
 	<key>PROJECT_ID</key>
-	<string>nexrave-dev</string>
+	<string>nexrave-e1c12</string>
 	<key>STORAGE_BUCKET</key>
-	<string>nexrave-dev.appspot.com</string>
+	<string>nexrave-e1c12.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:960055745522:ios:7b1f4739610ca75e</string>
+	<string>1:592489729650:ios:7b1f4739610ca75e</string>
 	<key>DATABASE_URL</key>
-	<string>https://nexrave-dev.firebaseio.com</string>
+	<string>https://nexrave-e1c12.firebaseio.com</string>
 </dict>
 </plist>

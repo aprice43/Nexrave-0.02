@@ -10,12 +10,14 @@ import Foundation
 
 
 
-class MenueViewController: UIViewController , UITableViewDelegate , UITableViewDataSource{
+class MenueViewController: UIViewController,   UITableViewDelegate , UITableViewDataSource{
     
     var menueNameArr : Array = [String]()
     var iconImageArr : Array = [UIImage]()
     
     @IBOutlet weak var backgroundImage: UIImageView!
+    
+    @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var profilePic: UIImageView!
     
@@ -59,7 +61,7 @@ class MenueViewController: UIViewController , UITableViewDelegate , UITableViewD
         return cell
     }
     @objc(tableView:heightForRowAtIndexPath:) func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return (UIScreen.main.bounds.height / 2) / 4
+        return (UIScreen.main.bounds.height / 2) / 6
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let revealViewController : SWRevealViewController = self.revealViewController()
@@ -137,7 +139,9 @@ class MenueTableViewCell : UITableViewCell {
     
     @IBOutlet weak var menueLabel: UILabel!
     
-    
+
+
+
     
     
 

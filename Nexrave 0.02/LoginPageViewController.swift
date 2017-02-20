@@ -29,7 +29,7 @@ import FBSDKLoginKit
 
 
 
-class LoginPageViewController: UIViewController  {
+class LoginPageViewController: UIViewController , FBSDKLoginButtonDelegate{
 
     @IBOutlet var videoView: UIView!
     
@@ -109,10 +109,9 @@ class LoginPageViewController: UIViewController  {
         
         
         let signIn = FBSDKLoginButton()
-        
+        signIn.delegate = self
         signIn.loginBehavior = FBSDKLoginBehavior.browser
         
-
 
         signIn.frame.size.width = (UIScreen.main.bounds.width - (2 * margin))
         signIn.frame.size.height = 45.0
@@ -129,6 +128,7 @@ class LoginPageViewController: UIViewController  {
     }
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         if error != nil {
+           
             print(error)
             return
         }

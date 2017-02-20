@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "141F3E30458D68BB2B1B82EA835535EE"
+               BlueprintIdentifier = "0D968A4E06DB6ECC3EF612F2A5D352D0"
                BuildableName = "Pods_Nexrave_0_02.framework"
                BlueprintName = "Pods-Nexrave 0.02"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "141F3E30458D68BB2B1B82EA835535EE"
+            BlueprintIdentifier = "0D968A4E06DB6ECC3EF612F2A5D352D0"
             BuildableName = "Pods_Nexrave_0_02.framework"
             BlueprintName = "Pods-Nexrave 0.02"
             ReferencedContainer = "container:Pods.xcodeproj">
