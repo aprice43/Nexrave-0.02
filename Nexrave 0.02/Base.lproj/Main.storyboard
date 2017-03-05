@@ -189,7 +189,7 @@
         <scene sceneID="4Ta-Op-8Ud">
             <objects>
                 <collectionViewController storyboardIdentifier="Timeline" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hCx-GC-1xh" customClass="FeedController" customModule="Nexrave_0_02" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" dataMode="prototypes" id="o2Y-cx-WfW">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" directionalLockEnabled="YES" dataMode="prototypes" id="o2Y-cx-WfW">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -230,53 +230,96 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menueButton" destination="WWH-CL-nxH" id="NXo-K9-gw8"/>
-                        <segue destination="iH0-lX-cAd" kind="presentation" identifier="goToFeed" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="WM4-fN-gi2"/>
+                        <segue destination="ZTh-HM-7hT" kind="presentation" identifier="goToFeed" id="4Km-rb-iBF"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dWi-93-sNn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3577" y="1587"/>
         </scene>
-        <!--Eventpage View Controller-->
-        <scene sceneID="uQk-xq-ZId">
+        <!--Navigation Controller-->
+        <scene sceneID="DeT-gN-jW9">
             <objects>
-                <viewController storyboardIdentifier="Event" modalTransitionStyle="flipHorizontal" id="iH0-lX-cAd" customClass="eventpageViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="v9Y-0Z-vry"/>
-                        <viewControllerLayoutGuide type="bottom" id="Fop-UE-i4c"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="JAW-dk-mNy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcR-iJ-eCo">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <navigationItem id="8tI-aW-WuM">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="43E-cO-0xS">
-                                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <connections>
-                                                <segue destination="uE8-kE-Fn9" kind="show" id="EQG-RB-Zzr"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="faA-A8-z8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController providesPresentationContextTransitionStyle="YES" id="ZTh-HM-7hT" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fGC-KC-Bqs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ogZ-w5-ghs" kind="relationship" relationship="rootViewController" id="HGO-6h-ukz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Sv-SY-eur" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6134" y="51"/>
+            <point key="canvasLocation" x="5372" y="52"/>
+        </scene>
+        <!--Event Chat View Controller-->
+        <scene sceneID="yQ1-mb-EWI">
+            <objects>
+                <collectionViewController id="ogZ-w5-ghs" customClass="EventChatViewController" customModule="Nexrave_0_02" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" pagingEnabled="YES" dataMode="prototypes" id="kOw-fl-icJ">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IG3-uf-gDk">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="krd-cN-iz0">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="ogZ-w5-ghs" id="MYB-Vi-XS3"/>
+                            <outlet property="delegate" destination="ogZ-w5-ghs" id="PdH-6b-gUn"/>
+                        </connections>
+                    </collectionView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="Unm-ef-xrS">
+                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="HAU-Pl-WXW">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aPH-i9-CMW">
+                                <rect key="frame" x="16" y="6" width="40" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back"/>
+                            </button>
+                            <connections>
+                                <segue destination="uE8-kE-Fn9" kind="presentation" id="Jkh-BE-5Fl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="CXx-lg-3P7">
+                            <button key="customView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nYd-Ao-cEo">
+                                <rect key="frame" x="319" y="2" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="messout"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="eventPageCollectionView" destination="kOw-fl-icJ" id="KaJ-B7-KHR"/>
+                        <outlet property="messageButton" destination="nYd-Ao-cEo" id="yR7-YI-OvW"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7js-8Z-YBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6141.6000000000004" y="61.619190404797607"/>
         </scene>
     </scenes>
     <resources>
+        <image name="back" width="40" height="31"/>
         <image name="menue" width="30" height="30"/>
+        <image name="messout" width="199" height="199"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DFw-54-B0v"/>
+        <segue reference="Jkh-BE-5Fl"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SlideCell : UICollectionViewCell {
+class EventCell : UICollectionViewCell {
     override init(frame: CGRect){
         super.init(frame: frame)
         setupViews()
@@ -28,7 +28,7 @@ class SlideCell : UICollectionViewCell {
     
     func setupViews(){
     
-        backgroundColor = UIColor.white
+        backgroundColor = UIColor.black
         
         addSubview(flyerHeader)
         

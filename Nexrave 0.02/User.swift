@@ -11,28 +11,20 @@ import Foundation
 
 
 
-public class User {
+class User {
     var name: String?
     var ProfilePhotoUrl : String?
-    var timeline = [Event]()
-    var promoGroup : PromoGroup
+    var timeline : [Event]?
+    var promoGroup : PromoGroup?
     var email : String?
     var gender: String?
     var isHost: Bool?
-    var photos = [UIImage]()
-    var numOfHosted = 0
-    var pendingInvites = [Event]()
-    var eventHistory = [Event]()
+    var photos : [UIImage]?
+    var numOfHosted : Int?
+    var pendingInvites : [Event]?
+    var eventHistory : [Event]?
     
-    init() {
-        name = "none"
-        ProfilePhotoUrl = "none"
-        promoGroup = PromoGroup()
-        email = "none"
-        gender = "none"
-        isHost = false
-    }
-
+    
 
     
 

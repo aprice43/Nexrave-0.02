@@ -170,7 +170,7 @@ class LoginPageViewController: UIViewController , FBSDKLoginButtonDelegate{
             values.setObject((result as! NSDictionary).object(forKey: "gender")! , forKey: "gender" as NSCopying)
             values.setObject((result as! NSDictionary).object(forKey: "link")! , forKey: "link" as NSCopying)
             values.setObject("user" , forKey: "role" as NSCopying)
-
+            
 
             let usersRef = ref.child("users").child(uid!)
             usersRef.updateChildValues((values as NSDictionary) as! [AnyHashable : Any] , withCompletionBlock: {

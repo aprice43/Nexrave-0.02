@@ -42,7 +42,7 @@ class MenueViewController: UIViewController,   UITableViewDelegate , UITableView
         profilePic.layer.borderWidth = 2
         profilePic.layer.borderColor = UIColor.white.cgColor
         profilePic.clipsToBounds = true
-        profilePic.layer.cornerRadius = 60
+        profilePic.layer.cornerRadius = 75
         
         
         
