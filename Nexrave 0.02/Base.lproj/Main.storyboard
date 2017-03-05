@@ -230,7 +230,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menueButton" destination="WWH-CL-nxH" id="NXo-K9-gw8"/>
-                        <segue destination="ZTh-HM-7hT" kind="presentation" identifier="goToFeed" id="4Km-rb-iBF"/>
+                        <segue destination="ZTh-HM-7hT" kind="presentation" identifier="goToFeed" modalTransitionStyle="crossDissolve" id="4Km-rb-iBF"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dWi-93-sNn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -290,10 +290,10 @@
                                 <rect key="frame" x="16" y="6" width="40" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="bfeed:" destination="ogZ-w5-ghs" eventType="touchUpInside" id="3Kb-Ug-QVU"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <segue destination="uE8-kE-Fn9" kind="presentation" id="Jkh-BE-5Fl"/>
-                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="CXx-lg-3P7">
                             <button key="customView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nYd-Ao-cEo">
@@ -306,6 +306,7 @@
                     <connections>
                         <outlet property="eventPageCollectionView" destination="kOw-fl-icJ" id="KaJ-B7-KHR"/>
                         <outlet property="messageButton" destination="nYd-Ao-cEo" id="yR7-YI-OvW"/>
+                        <segue destination="D1G-m8-77o" kind="presentation" identifier="bfeed" modalTransitionStyle="crossDissolve" id="nt4-ph-nEl"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7js-8Z-YBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -319,7 +320,7 @@
         <image name="messout" width="199" height="199"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Jkh-BE-5Fl"/>
+        <segue reference="nt4-ph-nEl"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
