@@ -26,7 +26,8 @@ class FireTools {
                 .child("accepted_invites");
 
         pullHostingEvents();
-        pullOrganizationEvents();
+        //Leave organization events out for right now, until you get this initially working
+        //pullOrganizationEvents();
 
         userRef.observe(of: .value, with: { (snapshot) in
                 if (dataSnapshot.exists()) {
