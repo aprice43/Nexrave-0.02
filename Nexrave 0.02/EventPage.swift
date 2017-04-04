@@ -11,7 +11,7 @@ import UIKit
 class EventCell : UICollectionViewCell {
     override init(frame: CGRect){
         super.init(frame: frame)
-        setupViews()
+        SetupViews()
     }
     
     required init?(coder aDecoder: NSCoder) {
