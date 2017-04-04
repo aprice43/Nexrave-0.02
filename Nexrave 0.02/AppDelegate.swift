@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         self.storyboad =  UIStoryboard(name: "Main", bundle: Bundle.main)
-        let currentUser = FIRAuth.auth()?.currentUser!
+        let currentUser = FIRAuth.auth()?.currentUser
         if currentUser != nil
         {
             

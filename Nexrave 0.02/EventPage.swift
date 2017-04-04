@@ -80,7 +80,25 @@ class EventCell : UICollectionViewCell {
 		
 		return view
 	}()
-    func setupViews(){
+	let eventDesLabel : UILabel = {
+		let label = UILabel()
+		label.textColor = UIColor.white
+		label.text = "Description:"
+		label.font = UIFont.boldSystemFont(ofSize: 20)
+		
+		return label
+	}()
+	
+	let eventLocLabel: UILabel = {
+		let label = UILabel()
+		label.textColor = UIColor.white
+		label.text = "Location:"
+		label.font = UIFont.boldSystemFont(ofSize: 20)
+		return label
+		
+	}()
+	
+	func SetupViews(){
     
         backgroundColor = UIColor.black
         
@@ -90,6 +108,8 @@ class EventCell : UICollectionViewCell {
 		addSubview(dateLabel)
 		addSubview(eventName)
 		addSubview(ticketButton)
+		addSubview(eventDesLabel)
+		addSubview(eventLocLabel)
 		flyerHeader.addSubview(flyerOverlay)
 		flyerHeader.addConstriantsWithFormat(format: "H:|[v0]|", views: flyerOverlay)
 		flyerHeader.addConstriantsWithFormat(format: "V:|[v0]|", views: flyerOverlay)
@@ -101,7 +121,9 @@ class EventCell : UICollectionViewCell {
 		addConstriantsWithFormat(format: "V:|-20-[v0]", views: dateLabel)
         addConstriantsWithFormat(format: "H:|[v0]|", views: flyerHeader)
         addConstriantsWithFormat(format: "V:|[v0(220)][v1(3)]", views: flyerHeader,horDivider)
-		addConstriantsWithFormat(format: "V:[v0]-3-[v1]-9-[v2]", views: eventName,horDivider,ticketButton)
+		addConstriantsWithFormat(format: "V:[v0]-3-[v1]-9-[v2]-20-[v3]-160-[v4]", views: eventName,horDivider,ticketButton,eventDesLabel, eventLocLabel)
+		addConstriantsWithFormat(format: "H:|-16-[v0]", views: eventDesLabel)
+		addConstriantsWithFormat(format: "H:|-16-[v0]", views: eventLocLabel)
         
 
     }

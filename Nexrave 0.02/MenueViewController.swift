@@ -30,13 +30,13 @@ class MenueViewController: UIViewController,   UITableViewDelegate , UITableView
         iconImageArr = [ UIImage(named: "Discover" )! , UIImage(named: "history" )! , UIImage(named: "host" )! ,UIImage(named: "settings" )! ,]
         
         
-        let image = UIImage(named: "thug")
+        let image = UIImage(named: "user")
         
         profilePic.image = image
         profilePic.contentMode = .scaleAspectFill
         backgroundImage.image = image
         backgroundImage.alpha = 0.6
-        profileName.text = "Thugger Thugger"
+        profileName.text = "Active User"
         profileName.textColor = UIColor.white
         
         profilePic.layer.borderWidth = 2
