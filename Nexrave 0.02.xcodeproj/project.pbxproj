@@ -27,6 +27,7 @@
 		7D513EBB1E6C30AA0061BE7F /* MessagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D513EBA1E6C30AA0061BE7F /* MessagePage.swift */; };
 		7D513EBD1E6C30FE0061BE7F /* EventPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D513EBC1E6C30FE0061BE7F /* EventPage.swift */; };
 		7D513EBF1E6C310E0061BE7F /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D513EBE1E6C310E0061BE7F /* ProfilePage.swift */; };
+		7D7A011C1E9456E8008FC161 /* FirebaseToolbelt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A011B1E9456E8008FC161 /* FirebaseToolbelt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		7D513EBA1E6C30AA0061BE7F /* MessagePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagePage.swift; path = "../../../../Desktop/chat update /MessagePage.swift"; sourceTree = "<group>"; };
 		7D513EBC1E6C30FE0061BE7F /* EventPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPage.swift; sourceTree = "<group>"; };
 		7D513EBE1E6C310E0061BE7F /* ProfilePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+		7D7A011B1E9456E8008FC161 /* FirebaseToolbelt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseToolbelt.swift; sourceTree = "<group>"; };
 		B552B926606910CD3A4B2D9E /* Pods-Nexrave 0.02.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nexrave 0.02.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nexrave 0.02/Pods-Nexrave 0.02.release.xcconfig"; sourceTree = "<group>"; };
 		CDCC1DF29A17A96B1F222A6D /* Pods-Nexrave 0.02.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nexrave 0.02.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nexrave 0.02/Pods-Nexrave 0.02.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 				7D513EB81E6C2F1D0061BE7F /* EventChatViewController.swift */,
 				7D513EBA1E6C30AA0061BE7F /* MessagePage.swift */,
 				7D513EBE1E6C310E0061BE7F /* ProfilePage.swift */,
+				7D7A011B1E9456E8008FC161 /* FirebaseToolbelt.swift */,
 				7D513EBC1E6C30FE0061BE7F /* EventPage.swift */,
 				7D0012691E141DB200D9C7E1 /* Main.storyboard */,
 				7D00127D1E141EEC00D9C7E1 /* nexraveSplash.png */,
@@ -272,6 +275,7 @@
 				7D0012881E143CE300D9C7E1 /* FeedController.swift in Sources */,
 				7D096FCD1E5A5D0D00527688 /* LoginPageViewController.swift in Sources */,
 				7D513EBF1E6C310E0061BE7F /* ProfilePage.swift in Sources */,
+				7D7A011C1E9456E8008FC161 /* FirebaseToolbelt.swift in Sources */,
 				7D096FDC1E5A827A00527688 /* Nexrave.xcdatamodeld in Sources */,
 				7D0012661E141DB200D9C7E1 /* AppDelegate.swift in Sources */,
 				7D513EBD1E6C30FE0061BE7F /* EventPage.swift in Sources */,

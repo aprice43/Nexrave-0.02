@@ -11,7 +11,7 @@ import Foundation
 
 
 class MenueViewController: UIViewController,   UITableViewDelegate , UITableViewDataSource{
-    
+    let delegate = UIApplication.shared.delegate as! AppDelegate
     var menueNameArr : Array = [String]()
     var iconImageArr : Array = [UIImage]()
     
@@ -30,21 +30,21 @@ class MenueViewController: UIViewController,   UITableViewDelegate , UITableView
         iconImageArr = [ UIImage(named: "Discover" )! , UIImage(named: "history" )! , UIImage(named: "host" )! ,UIImage(named: "settings" )! ,]
         
         
-        let image = UIImage(named: "user")
+        let image = delegate.user.photo
+		
         
         profilePic.image = image
         profilePic.contentMode = .scaleAspectFill
         backgroundImage.image = image
         backgroundImage.alpha = 0.6
-        profileName.text = "Active User"
-        profileName.textColor = UIColor.white
-        
+        profileName.text = delegate.user.name
+		profileName.textColor = UIColor.white
         profilePic.layer.borderWidth = 2
         profilePic.layer.borderColor = UIColor.white.cgColor
         profilePic.clipsToBounds = true
         profilePic.layer.cornerRadius = 75
         
-        
+		
         
     }
     
@@ -105,6 +105,7 @@ class MenueViewController: UIViewController,   UITableViewDelegate , UITableView
             revealViewController.pushFrontViewController(newFrontViewController, animated: true)
             
         }
+
     }
     
     

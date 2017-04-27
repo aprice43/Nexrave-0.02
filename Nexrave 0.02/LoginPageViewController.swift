@@ -157,10 +157,10 @@ class LoginPageViewController: UIViewController , FBSDKLoginButtonDelegate{
                 return
             }
             
-			self.performSegue(withIdentifier: "toFeed", sender: self) 
+			
             
-           // let uid = FIRAuth.auth()?.currentUser?.uid
-            //let ref = FIRDatabase.database().reference(fromURL: "https://nexrave-e1c12.firebaseio.com/")
+           let uid = FIRAuth.auth()?.currentUser?.uid
+		   let  ref = FIRDatabase.database().reference(fromURL: "https://nexrave-e1c12.firebaseio.com/")
             let values =  NSMutableDictionary()
             
             
@@ -172,24 +172,24 @@ class LoginPageViewController: UIViewController , FBSDKLoginButtonDelegate{
             values.setObject("user" , forKey: "role" as NSCopying)
             
 
-//            //let usersRef = ref.child("users").child(uid!)
-//            usersRef.updateChildValues((values as NSDictionary) as! [AnyHashable : Any] , withCompletionBlock: {
-//                (err, ref) in
-//                
-//                if err != nil {
-//                    
-//                    print(err ?? "")
-//                    return
-//                }
-//                
-//                print("made it into firbase")
-//                
-//               // self.performSegue(withIdentifier: "toFeed", sender: self)
-//                
-//                
+            let usersRef = ref.child("users").child(uid!)
+            usersRef.updateChildValues((values as NSDictionary) as! [AnyHashable : Any] , withCompletionBlock: {
+                (err, ref) in
+                
+                if err != nil {
+                    
+                    print(err ?? "")
+                    return
+                }
+                
+                print("made it into firbase")
+                
+                self.performSegue(withIdentifier: "toFeed", sender: self)
+				
+                
 			
-//            })
-            
+            })
+			
             
             
             

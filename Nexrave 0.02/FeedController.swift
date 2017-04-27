@@ -10,6 +10,10 @@
 import UIKit
 import Foundation
 import Darwin
+import Kingfisher
+
+
+
 
 
 
@@ -56,16 +60,16 @@ extension UIImage {
 class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLayout{
     
     let customIdentifier = "custom ID"
-    
-    var post = [Event]()
+    let delegate = UIApplication.shared.delegate as! AppDelegate
     @IBOutlet weak var menueButton: UIBarButtonItem!
-    
+	
 	
     
     
     
     override func viewDidLoad(){
     super.viewDidLoad()
+	delegate.user.toolbelt.collectionView = self
     let titleLogo : UIImage = UIImage(named: "FeedLogo")!
     let marginX: CGFloat = (self.navigationController!.navigationBar.frame.size.width / 2) - 45
     let imageView = UIImageView(frame: CGRect(x: marginX, y: 0, width: 90, height: 45))
@@ -77,29 +81,49 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
     self.navigationController?.navigationBar.barTintColor = UIColor.clear
     menueButton.target = self.revealViewController()
     menueButton.action = #selector(SWRevealViewController.revealToggle(_:))
-        
+	
     self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     
     collectionView?.register(CustomCell.self, forCellWithReuseIdentifier: customIdentifier)
-        
-        
-    
-        
+	
+		
+
+	
+		
     }
 	
-    
-    
+	
+	override func viewWillAppear(_ animated: Bool) {
+		if delegate.user.timeline != nil {
+			return
+		}
+		DispatchQueue.global(qos: .userInteractive).sync {
+			
+		self.delegate.user.toolbelt.loadFeedEvents()
+		}
+		
+	}
+
+	func reload() {
+		self.delegate.user.timeline = self.delegate.user.toolbelt.userEventList
+		self.collectionView?.reloadData()
+	}
+	
+
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: customIdentifier, for: indexPath) as! CustomCell
+			
+			cell.event = delegate.user.timeline?[indexPath.item]
+		
         
-        
-        
-        
-        return collectionView.dequeueReusableCell(withReuseIdentifier: customIdentifier, for: indexPath)
+        return cell
     }
-    let names = [" 1.png ", "2.JPG", "3.jpeg" , "4.png"]
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+		
+		return delegate.user.timeline?.count ?? 0
+		
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: (view.frame.width), height: (view.frame.width - 30))
@@ -120,18 +144,76 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
 
 
 class CustomCell: UICollectionViewCell {
-    
-    
+	var event: Event? {
+		didSet {
+			
+			if let eventname = event?.event_name {
+				
+				eventTitleLabel.text = eventname
+				
+			}
+			
+			if let city = event?.city_state {
+				cityLabel.text = city
+			}
+			
+			if let hostName = event?.hostName{
+				if hostName != "" {
+				hostNameLabel.text = hostName
+				}
+			}
+			if let hostImage = event?.hostProfilephoto{
+				
+				hostPicture.image = hostImage
+			}
+			if let flyer = event?.facebook_cover_pic{
+				let url = URL(string:flyer)!
+				
+	
+				flyerImageView.0.kf.setImage(with: url,
+				                                       placeholder: nil,
+				                                       options: [.transition(.fade(1.5))],
+				                                       progressBlock: nil,
+				                                       completionHandler: {
+														(image, error, cacheType, imageUrl) in
+														
+														if image != nil {
+															self.flyerImageView.1 = self.flyerImageView.0.getBestColor(image: image!)
+														}else {
+															self.flyerImageView.1 = UIColor.black
+														}
+														self.setupViews()
+										
+														
+				})
+			}
+			
+//			if let profileImagename = post?.profileImageName {
+//				profileImageView.image = UIImage(named: profileImagename)
+//			}
+//			
+//			if let statusImageName = post?.statusImageName {
+//				statusImageView.image = UIImage(named: statusImageName)
+//			}
+//			
+//			if let numLikes = post?.numLikes, let numComments = post?.numComments {
+//				likesCommentsLabel.text = "\(numLikes) Likes  \(numComments) Comments"
+//			}
+//			
+		}
+	}
+	
+	
     override init(frame: CGRect){
         super.init(frame: frame)
         setupViews()
 		
     }
-    
+	
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+	
     let hostPicture: UIImageView = {
         let hostView = UIImageView()
         hostView.image = UIImage(named: "3")
@@ -173,18 +255,16 @@ class CustomCell: UICollectionViewCell {
         return label
     }()
     
-    let flyerImageView: (UIImageView, UIColor) = {
+    var flyerImageView: (UIImageView, UIColor) = {
         let imageView = UIImageView()
-		let image = UIImage(named: "waka")
-
-        imageView.image = image
+		imageView.backgroundColor = UIColor.white
         imageView.contentMode = .scaleToFill
 		//imageView.backgroundColor = brightestColor
 		
 		
 		
 		
-        return (imageView , imageView.getBestColor(image: image!))
+        return (imageView , UIColor.black)
     }()
     let transitionButton: UIButton = {
         let button = UIButton()
@@ -217,7 +297,7 @@ class CustomCell: UICollectionViewCell {
 		return back
 	}()
 
-
+	
 
 
 
@@ -228,13 +308,14 @@ class CustomCell: UICollectionViewCell {
         addSubview(top)
 		
         addSubview(flyerImageView.0)
-		
+
         addSubview(hostNameLabel)
 		addSubview(cityLabel)
         addSubview(hostPicture)
         addSubview(eventDateLabel)
-		transitionButton.backgroundColor = flyerImageView.1
+		
 		hostPicture.layer.borderColor = flyerImageView.1.cgColor
+		transitionButton.backgroundColor = flyerImageView.1
         addSubview(transitionButton)
         addSubview(eventTitleLabel)
 		addConstriantsWithFormat(format: "H:|[v0]|", views: top)
@@ -252,8 +333,11 @@ class CustomCell: UICollectionViewCell {
         addConstriantsWithFormat(format: "V:|-8-[v0]", views: eventDateLabel)
         addConstriantsWithFormat(format: "V:[v0]-10-|", views: eventTitleLabel)
 
-		if (transitionButton.backgroundColor == UIColor.black){
+		if (transitionButton.backgroundColor == UIColor.black || transitionButton.backgroundColor == nil ){
 			transitionButton.layer.borderWidth = 1.3
+			transitionButton.layer.borderColor = UIColor.white.cgColor
+		}else {
+			transitionButton.layer.borderWidth = 0
 			transitionButton.layer.borderColor = UIColor.white.cgColor
 		}
 		

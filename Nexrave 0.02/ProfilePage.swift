@@ -19,9 +19,11 @@ class ProfileCell : UICollectionViewCell {
 		fatalError("init(coder:) has not been implemented")
 	}
 	
+	
 	let ProfileHeader: UIImageView = {
+		let delegate = UIApplication.shared.delegate as! AppDelegate
 		let flyer = UIImageView()
-		flyer.image = UIImage(named: "thug")
+		flyer.image = delegate.user.photo
 		flyer.contentMode = .scaleAspectFill
 		flyer.clipsToBounds = true
 		flyer.alpha = 0.8
@@ -38,8 +40,9 @@ class ProfileCell : UICollectionViewCell {
 		
 	}()
 	let userPhoto: UIImageView = {
+		let delegate = UIApplication.shared.delegate as! AppDelegate
 		let photo = UIImageView()
-		photo.image = UIImage(named: "user")
+		photo.image = delegate.user.photo
 		photo.layer.borderColor = UIColor.white.cgColor
 		photo.layer.borderWidth = 2
 		photo.layer.cornerRadius = 70
@@ -99,9 +102,10 @@ class ProfileCell : UICollectionViewCell {
 		return view
 	}()
 	let nameLabel : UILabel = {
+		let delegate = UIApplication.shared.delegate as! AppDelegate
 		let label = UILabel()
 		label.textColor = UIColor.white
-		label.text = "User Profile"
+		label.text = delegate.user.name
 		label.font = UIFont.boldSystemFont(ofSize: 25)
 		label.textAlignment = .center
 		return label
