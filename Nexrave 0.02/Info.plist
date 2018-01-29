@@ -36,14 +36,14 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb554750694590482</string>
+				<string>fb174648863008638</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>FacebookAppID</key>
-	<string>554750694590482</string>
+	<string>174648863008638</string>
 	<key>FacebookDisplayName</key>
 	<string>Nexrave</string>
 	<key>LSApplicationQueriesSchemes</key>

@@ -51,6 +51,7 @@
 		7D096FD41E5A61D300527688 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7D096FD81E5A815D00527688 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7D096FDB1E5A827A00527688 /* Nexrave.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nexrave.xcdatamodel; sourceTree = "<group>"; };
+		7D4FAEA21EB7AE9300978371 /* Nexrave 0.02.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Nexrave 0.02.entitlements"; sourceTree = "<group>"; };
 		7D513EB81E6C2F1D0061BE7F /* EventChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventChatViewController.swift; path = "../../../../Desktop/chat update /EventChatViewController.swift"; sourceTree = "<group>"; };
 		7D513EBA1E6C30AA0061BE7F /* MessagePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagePage.swift; path = "../../../../Desktop/chat update /MessagePage.swift"; sourceTree = "<group>"; };
 		7D513EBC1E6C30FE0061BE7F /* EventPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPage.swift; sourceTree = "<group>"; };
@@ -103,6 +104,7 @@
 		7D0012641E141DB200D9C7E1 /* Nexrave 0.02 */ = {
 			isa = PBXGroup;
 			children = (
+				7D4FAEA21EB7AE9300978371 /* Nexrave 0.02.entitlements */,
 				7D096FD01E5A5E2900527688 /* SWRevealViewController.h */,
 				7D096FD11E5A5E2900527688 /* SWRevealViewController.m */,
 				7D096FC81E5A5D0D00527688 /* LoginPageViewController.swift */,
@@ -176,6 +178,11 @@
 						DevelopmentTeam = VJ3UZD9582;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -401,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Nexrave 0.02/Nexrave 0.02.entitlements";
 				DEVELOPMENT_TEAM = VJ3UZD9582;
 				INFOPLIST_FILE = "Nexrave 0.02/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -418,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Nexrave 0.02/Nexrave 0.02.entitlements";
 				DEVELOPMENT_TEAM = VJ3UZD9582;
 				INFOPLIST_FILE = "Nexrave 0.02/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

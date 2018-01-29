@@ -62,7 +62,7 @@ class FirebaseToolbelt {
 	
 	func pullAcceptedEvents() {
 		
-		DispatchQueue.global(qos: .userInitiated).sync {
+		DispatchQueue.global(qos: .userInitiated).async {
 			
 		
 		
@@ -94,7 +94,7 @@ class FirebaseToolbelt {
 		
 	}
      func pullHostingEvents(){
-		DispatchQueue.global(qos: .userInitiated).sync {
+		DispatchQueue.global(qos: .userInitiated).async {
 			
 			
 		
@@ -126,14 +126,14 @@ class FirebaseToolbelt {
      }
  
      func pullOrganizationEvents() {
-		DispatchQueue.global(qos: .userInitiated).sync {
+		DispatchQueue.global(qos: .userInitiated).async {
 			
 			
 		 
          let userRef2 = self.ref.child("users").child(self.uid!).child("subscribed").child("organizations")
 		
 		 _ = userRef2.observe(FIRDataEventType.value, with: { (snapshot) in
-			 DispatchQueue.main.async {
+			 DispatchQueue.global(qos: .userInitiated).async {
 			if snapshot.exists(){
 					let map = snapshot.value as? [String : AnyObject] ?? [:]
 					var orgs  = [Any]()
@@ -142,9 +142,12 @@ class FirebaseToolbelt {
 					}
 					var i = 0
 				while (i < orgs.count) {
-					let orgEventsList = self.ref.child("organizations").child( (orgs[i] as! [String : AnyObject])["events"] as! String)
-					orgEventsList.observe(FIRDataEventType.value, with: { (snapshot) in
-						if (snapshot.exists()) {
+					DispatchQueue.global(qos: .userInitiated).sync  {
+					let orgEventsList = self.ref.child("organizations").child( orgs[i] as! String).child("current_events")
+					
+					_ = orgEventsList.observe(FIRDataEventType.value, with: { (snapshot) in
+					i += 1
+					if (snapshot.exists()) {
 					let map2 = snapshot.value as? [String : AnyObject] ?? [:]
 					var hold = [Any]()
 					for (key, _) in map2 {
@@ -152,13 +155,17 @@ class FirebaseToolbelt {
 					}
 				
 					self.search(invitedEventsList: hold , userRef2: orgEventsList)
-					i += 1;
+					
+						
 					} else {
 					//User has no events
 					print("No events")
-		  }
 					
+		  }
+						
+						
 		})
+					}
 	  }
 				
     }
@@ -171,7 +178,7 @@ class FirebaseToolbelt {
 
 
 	func  search(invitedEventsList: [Any], userRef2: FIRDatabaseReference ){
-		DispatchQueue.global(qos: .userInitiated).sync {
+		DispatchQueue.global(qos: .userInteractive).sync {
 			
 			
 		 
@@ -185,7 +192,7 @@ class FirebaseToolbelt {
          while (i < invitedEventsList.count) {
              let event_id = invitedEventsList[i]
              let eventRef = eventsRef.child(event_id as! String);
-            // eventRef.keepSynced(true);
+             eventRef.keepSynced(true)
 			
 			
 				

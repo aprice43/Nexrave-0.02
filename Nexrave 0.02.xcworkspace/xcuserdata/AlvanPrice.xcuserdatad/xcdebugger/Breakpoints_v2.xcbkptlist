@@ -9,14 +9,46 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515014926.674051"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359157.274783"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
-            landmarkName = "CustomCell"
-            landmarkType = "3">
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "pullOrganizationEvents()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359157.274783"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "pullOrganizationEvents()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359157.274783"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "pullOrganizationEvents()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -25,14 +57,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515014927.153489"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515356955.977025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
-            landmarkName = "CustomCell"
-            landmarkType = "3">
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "pullOrganizationEvents()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -41,14 +73,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515014927.641479"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515356956.474461"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
-            landmarkName = "CustomCell"
-            landmarkType = "3">
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "pullOrganizationEvents()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -57,14 +89,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515014928.138794"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359157.274783"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
-            landmarkName = "CustomCell"
-            landmarkType = "3">
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "pullOrganizationEvents()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -73,44 +105,44 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515015093.966255"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515356967.792772"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "186"
-            endingLineNumber = "186"
-            landmarkName = "CustomCell"
-            landmarkType = "3">
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "pullHostingEvents()"
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Nexrave_0_02.CustomCell.event.didset : Swift.Optional&lt;Nexrave_0_02.Event&gt;"
+                  symbolName = "Nexrave_0_02.FirebaseToolbelt.(pullHostingEvents () -&gt; ()).(closure #1).(closure #1)"
                   moduleName = "Nexrave 0.02"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FeedController.swift"
-                  timestampString = "515015094.350724"
+                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FirebaseToolbelt.swift"
+                  timestampString = "515359824.662488"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "188"
-                  endingLineNumber = "188"
-                  offsetFromSymbolStart = "2668">
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "304">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Nexrave_0_02.CustomCell.(event.didset : Swift.Optional&lt;Nexrave_0_02.Event&gt;).(closure #1)"
+                  symbolName = "Nexrave_0_02.FirebaseToolbelt.(pullHostingEvents () -&gt; ()).(closure #1).(closure #1).(closure #1)"
                   moduleName = "Nexrave 0.02"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FeedController.swift"
-                  timestampString = "515015094.35332"
+                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FirebaseToolbelt.swift"
+                  timestampString = "515359824.664155"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "188"
-                  endingLineNumber = "188"
-                  offsetFromSymbolStart = "776">
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "1472">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -121,14 +153,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515014929.408642"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515356968.098325"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
-            landmarkName = "CustomCell"
-            landmarkType = "3">
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "pullHostingEvents()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -137,44 +169,44 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515015093.966255"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515356968.437299"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
-            landmarkName = "CustomCell"
-            landmarkType = "3">
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "pullHostingEvents()"
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Nexrave_0_02.CustomCell.event.didset : Swift.Optional&lt;Nexrave_0_02.Event&gt;"
+                  symbolName = "Nexrave_0_02.FirebaseToolbelt.(pullHostingEvents () -&gt; ()).(closure #1).(closure #1)"
                   moduleName = "Nexrave 0.02"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FeedController.swift"
-                  timestampString = "515015094.35991"
+                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FirebaseToolbelt.swift"
+                  timestampString = "515359824.670879"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "188"
-                  endingLineNumber = "188"
-                  offsetFromSymbolStart = "2668">
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "72">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Nexrave_0_02.CustomCell.(event.didset : Swift.Optional&lt;Nexrave_0_02.Event&gt;).(closure #1)"
+                  symbolName = "Nexrave_0_02.FirebaseToolbelt.(pullHostingEvents () -&gt; ()).(closure #1).(closure #1).(closure #1)"
                   moduleName = "Nexrave 0.02"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FeedController.swift"
-                  timestampString = "515015094.361527"
+                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FirebaseToolbelt.swift"
+                  timestampString = "515359824.672538"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "188"
-                  endingLineNumber = "188"
-                  offsetFromSymbolStart = "776">
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "36">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -185,14 +217,46 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515015093.966255"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515356969.839087"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
-            landmarkName = "CustomCell"
-            landmarkType = "3">
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "pullAcceptedEvents()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Nexrave_0_02.FirebaseToolbelt.(pullAcceptedEvents () -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "Nexrave 0.02"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FirebaseToolbelt.swift"
+                  timestampString = "515359824.676515"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "276">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Nexrave_0_02.FirebaseToolbelt.(pullAcceptedEvents () -&gt; ()).(closure #1).(closure #1).(closure #1)"
+                  moduleName = "Nexrave 0.02"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FirebaseToolbelt.swift"
+                  timestampString = "515359824.678178"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "1856">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -201,77 +265,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515015093.966255"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515356970.167915"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "259"
-            endingLineNumber = "259"
-            landmarkName = "flyerImageView"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515015093.966255"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "262"
-            endingLineNumber = "262"
-            landmarkName = "flyerImageView"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515015093.966255"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "266"
-            endingLineNumber = "266"
-            landmarkName = "flyerImageView"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515015093.966255"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "267"
-            endingLineNumber = "267"
-            landmarkName = "flyerImageView"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515015241.237858"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "336"
-            endingLineNumber = "336"
-            landmarkName = "setupViews()"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "pullAcceptedEvents()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -281,13 +281,61 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515015241.237858"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515356970.553093"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "338"
-            endingLineNumber = "338"
-            landmarkName = "setupViews()"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "pullAcceptedEvents()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Nexrave_0_02.FirebaseToolbelt.(pullAcceptedEvents () -&gt; ()).(closure #1)"
+                  moduleName = "Nexrave 0.02"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FirebaseToolbelt.swift"
+                  timestampString = "515359824.684997"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "452">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Nexrave_0_02.FirebaseToolbelt.(pullAcceptedEvents () -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "Nexrave 0.02"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FirebaseToolbelt.swift"
+                  timestampString = "515359824.686663"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515356973.798836"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "loadFeedEvents()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -297,13 +345,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515015332.067345"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515356974.160391"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "343"
-            endingLineNumber = "343"
-            landmarkName = "setupViews()"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "loadFeedEvents()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -313,13 +361,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515015241.237858"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515356974.616643"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "337"
-            endingLineNumber = "337"
-            landmarkName = "setupViews()"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "loadFeedEvents()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -329,13 +377,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515015241.237858"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359824.326751"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "317"
-            endingLineNumber = "317"
-            landmarkName = "setupViews()"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
+            landmarkName = "search(invitedEventsList:userRef2:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -345,13 +393,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515015093.966255"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359824.326751"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "311"
-            endingLineNumber = "311"
-            landmarkName = "setupViews()"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
+            landmarkName = "search(invitedEventsList:userRef2:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -361,14 +409,381 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nexrave 0.02/FeedController.swift"
-            timestampString = "515015093.966255"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359824.326751"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "310"
-            endingLineNumber = "310"
-            landmarkName = "setupViews()"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
+            landmarkName = "search(invitedEventsList:userRef2:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359824.326751"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "214"
+            endingLineNumber = "214"
+            landmarkName = "search(invitedEventsList:userRef2:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359824.326751"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
+            landmarkName = "search(invitedEventsList:userRef2:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359824.326751"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
+            landmarkName = "search(invitedEventsList:userRef2:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515357722.0434"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "pullAcceptedEvents()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515357723.391792"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "pullAcceptedEvents()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515358217.668381"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "pullAcceptedEvents()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359157.274783"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "pullOrganizationEvents()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359157.274783"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "pullOrganizationEvents()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359157.274783"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "pullOrganizationEvents()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359157.274783"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
+            landmarkName = "pullOrganizationEvents()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359157.274783"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "pullOrganizationEvents()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359157.274783"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "pullOrganizationEvents()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359157.274783"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "pullOrganizationEvents()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Nexrave_0_02.FirebaseToolbelt.(pullOrganizationEvents () -&gt; ()).(closure #1).(closure #1).(closure #1).(closure #1)"
+                  moduleName = "Nexrave 0.02"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FirebaseToolbelt.swift"
+                  timestampString = "515359824.750561"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "148"
+                  endingLineNumber = "148"
+                  offsetFromSymbolStart = "500">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Nexrave_0_02.FirebaseToolbelt.(pullOrganizationEvents () -&gt; ()).(closure #1).(closure #1).(closure #1).(closure #1).(closure #1)"
+                  moduleName = "Nexrave 0.02"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FirebaseToolbelt.swift"
+                  timestampString = "515359824.752258"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515358292.526041"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "pullOrganizationEvents()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Nexrave_0_02.FirebaseToolbelt.(pullOrganizationEvents () -&gt; ()).(closure #1).(closure #1).(closure #1)"
+                  moduleName = "Nexrave 0.02"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FirebaseToolbelt.swift"
+                  timestampString = "515359824.755694"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "1456">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Nexrave_0_02.FirebaseToolbelt.(pullOrganizationEvents () -&gt; ()).(closure #1).(closure #1).(closure #1).(closure #1)"
+                  moduleName = "Nexrave 0.02"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FirebaseToolbelt.swift"
+                  timestampString = "515359824.757727"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Nexrave_0_02.FirebaseToolbelt.(pullOrganizationEvents () -&gt; ()).(closure #1).(closure #1).(closure #1).(closure #1).(closure #1)"
+                  moduleName = "Nexrave 0.02"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FirebaseToolbelt.swift"
+                  timestampString = "515359824.759451"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359157.274783"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "pullOrganizationEvents()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nexrave 0.02/FirebaseToolbelt.swift"
+            timestampString = "515359157.274783"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "pullOrganizationEvents()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Nexrave_0_02.FirebaseToolbelt.(pullOrganizationEvents () -&gt; ()).(closure #1).(closure #1).(closure #1).(closure #1)"
+                  moduleName = "Nexrave 0.02"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FirebaseToolbelt.swift"
+                  timestampString = "515359824.766352"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "148"
+                  endingLineNumber = "148"
+                  offsetFromSymbolStart = "500">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Nexrave_0_02.FirebaseToolbelt.(pullOrganizationEvents () -&gt; ()).(closure #1).(closure #1).(closure #1).(closure #1).(closure #1)"
+                  moduleName = "Nexrave 0.02"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AlvanPrice/Documents/Nexrave2/Nexrave%200.02/Nexrave%200.02/FirebaseToolbelt.swift"
+                  timestampString = "515359824.768064"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -1,4 +1,4 @@
-//
+ //
 //  AppDelegate.swift
 //  Nexrave 0.02
 //
@@ -29,15 +29,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let currentUser = FIRAuth.auth()?.currentUser
         if currentUser != nil
         {
-		DispatchQueue.global(qos: .userInteractive).async {
+	
 
 				
-					self.user.setUserProperties()
+			
+			self.user.setUserProperties()
 					
 
 
 				
-			}
+			
 
  
 			
@@ -46,6 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         }
         else
+			
         {
             self.window?.rootViewController = self.storyboad?.instantiateViewController(withIdentifier: "Login")
         }

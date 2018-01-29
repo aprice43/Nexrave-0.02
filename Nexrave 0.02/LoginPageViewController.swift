@@ -110,7 +110,7 @@ class LoginPageViewController: UIViewController , FBSDKLoginButtonDelegate{
         
         let signIn = FBSDKLoginButton()
         signIn.delegate = self
-        signIn.loginBehavior = FBSDKLoginBehavior.browser
+        signIn.loginBehavior = FBSDKLoginBehavior.native
         
 
         signIn.frame.size.width = (UIScreen.main.bounds.width - (2 * margin))
@@ -137,17 +137,19 @@ class LoginPageViewController: UIViewController , FBSDKLoginButtonDelegate{
         guard let accessTokenString = accessToken?.tokenString else
         {return}
         let credentials = FIRFacebookAuthProvider.credential(withAccessToken: accessTokenString)
-        FIRAuth.auth()?.signIn(with: credentials, completion: { (user,error) in
+		
+        FIRAuth.auth()!.signIn(with: credentials, completion: { (user,error) in
             if error != nil {
                 print("Something doesn't seem right here: ",error ?? "")
                 return
             }
             
-            
+			
             print("Successfully logged in"  )
             
             
-        })
+			
+	
         FBSDKGraphRequest(graphPath: "/me", parameters: ["fields": "id,name,age_range,gender,link"]).start {
          (connection,result,err) in
             
@@ -190,11 +192,9 @@ class LoginPageViewController: UIViewController , FBSDKLoginButtonDelegate{
 			
             })
 			
-            
-            
-            
-            
+			
         }
+		})
     }
-
+ 
 }

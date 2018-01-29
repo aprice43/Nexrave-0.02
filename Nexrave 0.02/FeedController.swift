@@ -19,6 +19,8 @@ import Kingfisher
 
 
 
+
+
 extension UIImage {
 	func getPixelColor(pos: CGPoint ) -> UIColor {
 		
@@ -97,6 +99,13 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
 		if delegate.user.timeline != nil {
 			return
 		}
+		if delegate.user.name == nil {
+			DispatchQueue.global(qos: .userInteractive).sync {
+				
+				self.delegate.user.setUserProperties()
+			}
+			
+		}
 		DispatchQueue.global(qos: .userInteractive).sync {
 			
 		self.delegate.user.toolbelt.loadFeedEvents()
@@ -115,7 +124,7 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: customIdentifier, for: indexPath) as! CustomCell
 			
 			cell.event = delegate.user.timeline?[indexPath.item]
-		
+		    cell.controller = self
         
         return cell
     }
@@ -128,13 +137,17 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: (view.frame.width), height: (view.frame.width - 30))
     }
-    func transitionButtonPressed() {
+	func transitionButtonPressed() {
      performSegue(withIdentifier: "goToFeed", sender: self)
-        
+	 
     }
-    func checkForPost() {
-        
-    }
+//	func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//		if segue.identifier == "goToFeed" {
+//			if let eventView = segue.destination as? EventChatViewController {
+//				eventView.event = sender as? Event
+//			}
+//		}
+//	}
 
 
 
@@ -144,8 +157,12 @@ class FeedController: UICollectionViewController, UICollectionViewDelegateFlowLa
 
 
 class CustomCell: UICollectionViewCell {
+	
+	var controller : FeedController?
+	
 	var event: Event? {
 		didSet {
+//		   transitionButton.addTarget(self, action: #selector(controller?.transitionButtonPressed) , for: .touchUpInside)
 			
 			if let eventname = event?.event_name {
 				
@@ -269,7 +286,7 @@ class CustomCell: UICollectionViewCell {
     let transitionButton: UIButton = {
         let button = UIButton()
         button.backgroundColor = UIColor.clear
-        button.addTarget(self, action: #selector(FeedController.transitionButtonPressed) , for: .touchUpInside)
+		button.addTarget(self, action: #selector(FeedController.transitionButtonPressed) , for: .touchUpInside)
 		button.tintColor = UIColor.black
 		let arrowView = UIImageView()
 		let arrow = UIImage(named: "next")
@@ -326,10 +343,10 @@ class CustomCell: UICollectionViewCell {
 		addConstriantsWithFormat(format: "H:|-8-[v0(44)]-8-[v1]", views: hostPicture, cityLabel)
         addConstriantsWithFormat(format: "H:|[v0]|", views: flyerImageView.0)
         addConstriantsWithFormat(format: "H:|[v0]|", views: transitionButton)
-        addConstriantsWithFormat(format: "H:|-20-[v0]", views: eventTitleLabel)
+        addConstriantsWithFormat(format: "H:|-20-[v0]-(\(self.frame.width / 4.5 ))-|", views: eventTitleLabel)
         addConstriantsWithFormat(format: "V:|-10-[v0][v1]", views: hostNameLabel, cityLabel)
         addConstriantsWithFormat(format: "V:|-8-[v0(44)]", views: hostPicture)
-        addConstriantsWithFormat(format: "V:|-65-[v0(260)][v1]|", views: flyerImageView.0, transitionButton)
+        addConstriantsWithFormat(format: "V:|-65-[v0(\( 4 * (self.frame.height / 6) ))][v1]|", views: flyerImageView.0, transitionButton)
         addConstriantsWithFormat(format: "V:|-8-[v0]", views: eventDateLabel)
         addConstriantsWithFormat(format: "V:[v0]-10-|", views: eventTitleLabel)
 

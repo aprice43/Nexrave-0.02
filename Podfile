@@ -13,5 +13,4 @@ pod 'FBSDKCoreKit'
 pod 'FBSDKShareKit'
 pod 'FBSDKLoginKit'
 pod 'Kingfisher', '~> 3.0'
-
 end
